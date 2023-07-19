@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+
+
+        }
+        .btn{
+            
+            width: 24%;
+            height: 60px;
+        margin-bottom: 10px;
+        }
+        #clear{
+            
+            margin: auto;
+            display: block;
+            
+            
+        }
+        .percentage{
+            margin-left: 35%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid ">
+        <div class="row bg-dark text-warning p-4 h1">
+            <div class="col-4 m-auto  text-center" >
+                CALCULATER
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid   ">
+        <div class="row bg-light">
+<div class="col-md-6 bg-dark text-light m-auto">
+    
+    <form action="" name="form1" >
+    <input type="text" name="answer" id="result" class="w-100 p-4 bg-warning h2 mt-2" id="result"> <br>
+    <input type="button" value="1" class="btn btn-light  btn-lg " onclick="form1.answer.value+='1' " >
+    <input type="button" value="2" class="btn btn-light  btn-lg" onclick="form1.answer.value+='2'">
+    <input type="button" value="3" class="btn btn-light btn-lg" onclick="form1.answer.value+='3'">
+    <input type="button" value="+" class="btn btn-light btn-lg" onclick="form1.answer.value+='+'">
+
+    <input type="button" value="4" class="btn btn-light btn-lg" onclick="form1.answer.value+='4'">
+    <input type="button" value="5" class="btn btn-light btn-lg" onclick="form1.answer.value+='5'">
+    <input type="button" value="6" class="btn btn-light btn-lg" onclick="form1.answer.value+='6'">
+    <input type="button" value="-" class="btn btn-light btn-lg" onclick="form1.answer.value+='-'">
+
+    <input type="button" value="7" class="btn btn-light btn-lg" onclick="form1.answer.value+='7'">
+    <input type="button" value="8" class="btn btn-light btn-lg" onclick="form1.answer.value+='8'">
+    <input type="button" value="9" class="btn btn-light btn-lg" onclick="form1.answer.value+='9'">
+    <input type="button" value="*" class="btn btn-light btn-lg" onclick="form1.answer.value+='*'">
+    
+    <input type="button" value="0" class="btn btn-light btn-lg" onclick="form1.answer.value+='0'">
+    <input type="button" value="." class="btn btn-light btn-lg" onclick="form1.answer.value+='.'">
+    <input type="button" value="=" class="btn btn-light btn-lg" onclick="form1.answer.value=eval(form1.answer.value)">
+    <input type="button" value="/" class="btn btn-light btn-lg" onclick="form1.answer.value+='/'">
+    <input type="button" value="%" class="btn btn-light btn-lg percentage" onclick="form1.answer.value+='*(1/100)'">
+    
+    <input type="button" value="Clear" class="btn btn- btn-lg w-50 btn-warning " id="clear" onclick="form1.answer.value=''"> <br>
+
+    </form>
+</div>
+        </div>
+    </div>
+</body>
+</html>
